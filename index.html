@@ -2,16 +2,24 @@
 <html>
 <head>
 <title>Notepad</title>
+</head>
+
+<body id="notepad" contenteditable="true">
+<button id="printButton" onclick="printFile()">Print</button>
+ 
 <style>
-  iframe { 
-    height: 100%;
-    width: 100%;
+  #printButton {
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
 </style>
-</head>
-<body>
-
-<iframe src="notepad.html" title="notepad"></iframe>
+  
+<script>
+  function printFile() {
+    var file = document.getElementById("notepad");
+    file.contentWindow.print();
+  }
+</script>
 
 </body>
 </html>
