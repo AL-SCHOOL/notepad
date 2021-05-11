@@ -3,17 +3,18 @@
 <head>
 <title>Notepad</title>
 </head>
-
-<body id="notepad" contenteditable="true"></body>
-<button onclick="printFile()">Print</button>
+<body>
  
-<style>
+ <style>
   button {
     margin-right: 5px;
     margin-bottom: 5px;
   }
 </style>
-  
+ 
+<notepad id="notepad" contenteditable="true"></notepad>
+<button onclick="printFile()">Print</button>
+
 <script>
   function printFile() {
     var file = document.getElementById("notepad");
@@ -21,4 +22,5 @@
   }
 </script>
 
+</body> 
 </html>
