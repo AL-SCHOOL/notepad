@@ -4,11 +4,28 @@
 <title>Notepad</title>
 <link rel="icon" type="image/x-icon" href="icon.ico">
 </head>
-<body id="notes" contenteditable="true"></aside>
+<body>
+  
+<style>
+  #notes {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 200px;
+    width: 200px;
+  }
   
 <nav contenteditable="false">  
   <button onclick="window.print()">Print</button>  
 </nav>
+  
+<aside>
+  <div id="tools" contenteditable="false">
+    <button onclick="window.print()">Print</button>
+  </div>
+ 
+  <div id="notes" contenteditable="true"></div>
+</aside>
   
 </body> 
 </html>
