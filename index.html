@@ -5,29 +5,7 @@
 </head>
 <body>
  
- <style>
-  button {
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  #notepad {
-    height: 500px;
-    width: 500px;
-    padding: 5px;
-    border-style: solid;
-    border-width: 5px;
-  }
-</style>
- 
-<iframe src="notepad.html" title="iframe"></iframe>
-<button onclick="printFile()">Print</button>
-
-<script>
-  function printFile() {
-    var file = document.getElementById("notepad");
-    file.contentWindow.print();
-  }
-</script>
+<div id="notepad" contenteditable="true"></div>
 
 </body> 
 </html>
